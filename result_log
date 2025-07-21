@@ -1,0 +1,1764 @@
+G:\miniconda\envs\new_env\python.exe G:\pycharm_file\self_attempt.py
+ 20%|██        | 2/10 [00:00<00:00, 130.38it/s]
+
+RUNNING WITH THE FOLLOWING MEDIUM AUTO RUN SETTINGS:
+num_trials: 25
+minibatch: False
+num_candidates: 25
+valset size: 40
+
+
+==> STEP 1: BOOTSTRAP FEWSHOT EXAMPLES <==
+These will be used for informing instruction proposal.
+
+Bootstrapping N=25 sets of demonstrations...
+Bootstrapping set 1/25
+Bootstrapping set 2/25
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 2 full traces after 3 examples in round 0.
+Bootstrapping set 3/25
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+ 80%|████████  | 8/10 [00:00<00:00, 606.08it/s]
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 9 examples in round 0.
+Bootstrapping set 4/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 6 examples in round 0.
+Bootstrapping set 5/25
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 5 examples in round 0.
+Bootstrapping set 6/25
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 3 examples in round 0.
+Bootstrapping set 7/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 1 full traces after 4 examples in round 0.
+Bootstrapping set 8/25
+ 50%|█████     | 5/10 [00:00<00:00, 1267.31it/s]
+ 40%|████      | 4/10 [00:00<00:00, 4000.29it/s]
+ 20%|██        | 2/10 [00:00<?, ?it/s]
+ 30%|███       | 3/10 [00:00<00:00, 3000.22it/s]
+ 60%|██████    | 6/10 [00:00<00:00, 2999.86it/s]
+ 20%|██        | 2/10 [00:00<?, ?it/s]
+ 60%|██████    | 6/10 [00:00<00:00, 1707.32it/s]
+ 60%|██████    | 6/10 [00:00<00:00, 3000.58it/s]
+ 40%|████      | 4/10 [00:00<00:00, 2655.46it/s]
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 7 examples in round 0.
+Bootstrapping set 9/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 3 examples in round 0.
+Bootstrapping set 10/25
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 7 examples in round 0.
+Bootstrapping set 11/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 3 full traces after 7 examples in round 0.
+Bootstrapping set 12/25
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 5 examples in round 0.
+Bootstrapping set 13/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 2 full traces after 4 examples in round 0.
+Bootstrapping set 14/25
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 2 full traces after 5 examples in round 0.
+Bootstrapping set 15/25
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 8 examples in round 0.
+Bootstrapping set 16/25
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 5 examples in round 0.
+Bootstrapping set 17/25
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 1 full traces after 4 examples in round 0.
+Bootstrapping set 18/25
+ 30%|███       | 3/10 [00:00<00:00, 2977.50it/s]
+ 40%|████      | 4/10 [00:00<00:00, 3999.34it/s]
+ 70%|███████   | 7/10 [00:00<00:00, 2785.59it/s]
+ 40%|████      | 4/10 [00:00<00:00, 1999.43it/s]
+ 30%|███       | 3/10 [00:00<00:00, 3000.22it/s]
+ 80%|████████  | 8/10 [00:00<00:00, 2664.11it/s]
+ 40%|████      | 4/10 [00:00<00:00, 1962.94it/s]
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 3 full traces after 9 examples in round 0.
+Bootstrapping set 19/25
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 3 full traces after 5 examples in round 0.
+Bootstrapping set 20/25
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 1 full traces after 2 examples in round 0.
+Bootstrapping set 21/25
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'curiosity', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'confusion', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Bootstrapped 3 full traces after 10 examples in round 0.
+Bootstrapping set 22/25
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 4 examples in round 0.
+Bootstrapping set 23/25
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 3 examples in round 0.
+Bootstrapping set 24/25
+Predicted: {'annoyance', 'disapproval'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Bootstrapped 1 full traces after 3 examples in round 0.
+Bootstrapping set 25/25
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Predicted: {'optimism'}, Actual: {'desire', 'optimism'}, Jaccard: 0.5
+Predicted: {'fear'}, Actual: {'fear'}, Jaccard: 1.0
+Bootstrapped 2 full traces after 5 examples in round 0.
+
+==> STEP 2: PROPOSE INSTRUCTION CANDIDATES <==
+We will use the few-shot examples from the previous step, a generated dataset summary, a summary of the program code, and a randomly selected prompting tip to propose instructions.
+ 10%|█         | 1/10 [00:00<?, ?it/s]
+ 90%|█████████ | 9/10 [00:00<00:00, 3000.46it/s]
+ 30%|███       | 3/10 [00:00<00:00, 1499.39it/s]
+ 20%|██        | 2/10 [00:00<00:00, 2000.14it/s]
+ 20%|██        | 2/10 [00:00<00:00, 2000.14it/s]
+ 40%|████      | 4/10 [00:00<00:00, 2650.01it/s]
+
+Proposing instructions...
+
+Proposed Instructions for Predictor 0:
+
+0: Classify the emotion(s) expressed in a given text.
+Output one or more emotion labels corresponding to predefined emotion classes.
+
+1: Analyze the following text and identify the emotions conveyed within it. Please provide a rationale that explains your reasoning process step by step, and output a JSON-formatted list of the emotions classified from the predefined categories such as 'anger', 'joy', 'fear', etc. Be sure to select 1 to 5 emotions based on the content of the text.
+
+2: Analyze the following text and classify the emotion(s) expressed within it. Provide a JSON-formatted list of 1 to 5 selected emotions from the predefined emotion classes such as 'anger', 'joy', 'fear', and others. Additionally, include a step-by-step rationale explaining the reasoning behind your classification.
+
+3: Analyze the provided text and classify the emotion(s) expressed within it. Identify and output one or more emotion labels from the following predefined classes: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Include a rationale that explains your reasoning step by step. Format the extracted emotions as a JSON list, containing 1 to 5 selected emotions.
+
+4: You are an emotion classification expert. Your task is to analyze the following text and classify the emotion(s) expressed within it. Please provide a JSON-formatted list of 1 to 5 selected emotions from the predefined emotion labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Additionally, provide a rationale for your classification, explaining the reasoning behind the identified emotions.
+
+5: Analyze the following text to identify and classify the emotions expressed within it. Provide a detailed rationale explaining your thought process, and output a JSON-formatted list of the identified emotions from the predefined emotion classes, such as 'joy', 'fear', 'anger', and others. Be sure to consider the context and language used in the text carefully to ensure accurate classification.
+
+6: Analyze the provided text and classify the emotion(s) expressed within it. Consider the context and nuances of the language used to identify one or more emotions from the following predefined emotion labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Provide a JSON-formatted list of 1 to 5 selected emotions, along with a detailed rationale explaining your reasoning for the classification.
+
+7: Analyze the following text and identify the emotions conveyed within it. Provide a detailed rationale explaining your thought process step-by-step, and output a JSON-formatted list of one to five emotion labels from the predefined emotion classes, which include: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'. Make sure to justify your choices clearly in the rationale.
+
+8: Analyze the following text to identify and classify the emotions expressed within it. Provide a detailed rationale explaining your thought process, and output a JSON-formatted list of the identified emotions from the predefined emotion classes, such as 'joy', 'fear', 'anger', and others. Be sure to consider the context and language used in the text carefully to ensure accurate classification.
+
+9: Analyze the following text to identify the emotions expressed within it. Provide a detailed rationale for your classification process, explaining how you arrived at your conclusions. Finally, output a JSON-formatted list of the emotions identified, selecting from the predefined emotion labels such as 'joy', 'anger', 'fear', etc. Aim to capture the nuances of the emotional content, and feel free to include multiple emotions if they are present.
+
+10: Analyze the following text to identify and classify the emotions expressed. Provide a rationale for your classification and output the identified emotions as a JSON-formatted list. Use the predefined emotion labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'.
+
+11: Analyze the following text to identify and classify the emotions expressed. Provide a rationale detailing your thought process step-by-step, and output a JSON-formatted list of the identified emotions from the predefined emotion classes: ['admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'].
+
+12: Analyze the following text and classify the emotion(s) expressed within it. Provide a rationale explaining your reasoning, and output the identified emotions in a JSON-formatted list. The emotions to choose from include: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'.
+
+13: Analyze the following text and classify the emotion(s) expressed within it. Provide a rationale explaining your reasoning, and output the identified emotions in a JSON-formatted list. The emotions to choose from include: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'.
+
+14: Analyze the following text and classify the emotion(s) expressed within it. Provide a JSON-formatted list of 1 to 5 emotion labels from the predefined classes: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Additionally, include a rationale explaining the reasoning behind the classification.
+
+15: You are an emotion classification expert. Your task is to analyze the given text and classify the emotions expressed within it. Carefully consider the language and context to identify one or more emotions from the predefined list: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Provide a rationale for your classification by explaining your reasoning step by step. Finally, output your selected emotions in a JSON-formatted list.
+
+16: Analyze the following text and classify the emotion(s) expressed within it. Provide a rationale that explains your reasoning, and output the identified emotions as a JSON-formatted list. Choose from the predefined emotion labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'.
+
+17: Classify the emotions expressed in the provided text. Analyze the context and nuances, then output a JSON-formatted list of 1 to 5 emotions from the following labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Also, provide a rationale explaining the reasoning behind the selected emotions.
+
+18: Analyze the following text for emotions and classify them according to the predefined emotion labels. Provide a reasoning statement that explains your thought process in identifying the emotions, followed by a JSON-formatted list of the extracted emotions. Ensure that the output includes between one to five emotions based on your analysis.
+
+19: You are an emotion analysis expert. Classify the emotion(s) expressed in the following text. Provide a rationale for your classification, explaining the reasoning behind the identified emotions. Output one or more emotion labels from the predefined emotion classes in a JSON-formatted list.
+
+20: Analyze the provided text and classify the emotion(s) expressed within it. Consider the context and language used to determine which predefined emotion labels apply. Your response should include a rationale explaining your reasoning step by step, followed by a JSON-formatted list of extracted emotions, selecting from the following options: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'.
+
+21: Analyze the following text and classify the emotion(s) expressed within it. Provide a detailed rationale explaining your thought process step by step. Your output should include a JSON-formatted list of 1 to 5 selected emotions from the predefined emotion labels: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'. For example, if the text expresses joy and surprise, your output should be: Extracted Emotions: ["joy", "surprise"].
+
+22: You are an emotion analysis expert. Your task is to classify the emotion(s) expressed in the provided text. Carefully read the text and analyze the language used to identify one or more emotions from the predefined classes: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'. Provide a rationale that explains your reasoning step by step. Format your output as a JSON-formatted list of the identified emotions, including a maximum of five emotions. Example: ["joy", "surprise"].
+
+23: In a high-stakes situation where understanding human emotions is crucial, such as during a crisis negotiation or a customer service interaction, classify the emotion(s) expressed in the provided text. Your analysis will guide decision-making and emotional responses. Output one or more emotion labels corresponding to the predefined emotion classes: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', 'neutral'. Ensure to provide a JSON-formatted list of 1 to 5 selected emotions along with a clear rationale explaining your reasoning step by step.
+
+24: Analyze the provided text and identify the emotions conveyed within it. Your response should include a JSON-formatted list of 1 to 5 emotions from the predefined categories: 'admiration', 'amusement', 'anger', 'annoyance', 'approval', 'caring', 'confusion', 'curiosity', 'desire', 'disappointment', 'disapproval', 'disgust', 'embarrassment', 'excitement', 'fear', 'gratitude', 'grief', 'joy', 'love', 'nervousness', 'optimism', 'pride', 'realization', 'relief', 'remorse', 'sadness', 'surprise', and 'neutral'. Additionally, provide a detailed rationale explaining your reasoning for each emotion identified. For example, if the text conveys joy and surprise, your output should reflect this along with the justification for your choices.
+
+
+
+Evaluating the default program...
+
+Average Metric: 1.75 / 8  (21.9):  18%|█▊        | 7/40 [00:00<00:00, 348.02it/s]Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'relief', 'caring'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'admiration', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'neutral'}, Jaccard: 0.0
+Average Metric: 7.833333333333333 / 22  (35.6):  52%|█████▎    | 21/40 [00:00<00:00, 355.31it/s]Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'confusion', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion', 'curiosity'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'optimism', 'disapproval', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.25
+
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Average Metric: 13.75 / 40  (34.4): 100%|██████████| 40/40 [00:00<00:00, 482.34it/s]
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+Default program score: 34.38
+
+==> STEP 3: FINDING OPTIMAL PROMPT PARAMETERS <==
+We will evaluate the program over a series of trials with different combinations of instructions and few-shot examples to find the optimal combination using Bayesian Optimization.
+
+===== Trial 1 / 25 =====
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+G:\miniconda\envs\new_env\lib\site-packages\optuna\_experimental.py:30: ExperimentalWarning: Argument ``multivariate`` is an experimental feature. The interface can change in the future.
+  warnings.warn(
+Average Metric: 4.666666666666666 / 14  (33.3):  32%|███▎      | 13/40 [00:00<00:00, 480.90it/s]Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief'}, Actual: {'grief', 'sadness'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Average Metric: 14.916666666666668 / 40  (37.3): 100%|██████████| 40/40 [00:00<00:00, 621.44it/s]
+Predicted: {'confusion', 'disappointment'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'disapproval', 'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+Best full score so far! Score: 37.29
+Score: 37.29 with parameters ['Predictor 1: Instruction 12'].
+Scores so far: [34.38, 37.29]
+Best score so far: 37.29
+========================
+
+
+===== Trial 2 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Average Metric: 3.083333333333333 / 15  (20.6):  35%|███▌      | 14/40 [00:00<00:00, 505.59it/s]Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+
+Predicted: {'caring', 'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion', 'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'admiration', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.6666666666666666
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+
+Predicted: {'confusion', 'surprise'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+
+Average Metric: 7.249999999999999 / 26  (27.9):  62%|██████▎   | 25/40 [00:00<00:00, 396.02it/s]Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'disapproval', 'caring', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333Predicted: {'admiration'}, Actual: {'admiration'}, Jaccard: 1.0
+Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333Predicted: {'disapproval', 'admiration', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'admiration', 'surprise'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+Score: 34.38 with parameters ['Predictor 1: Instruction 1'].
+Scores so far: [34.38, 37.29, 34.38]
+Best score so far: 37.29
+========================
+
+
+===== Trial 3 / 25 =====
+Average Metric: 13.750000000000002 / 40  (34.4): 100%|██████████| 40/40 [00:00<00:00, 522.12it/s]
+Average Metric: 3.083333333333333 / 9  (34.3):  20%|██        | 8/40 [00:00<00:00, 365.31it/s]Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'relief', 'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'gratitude', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Average Metric: 7.749999999999999 / 24  (32.3):  57%|█████▊    | 23/40 [00:00<00:00, 402.52it/s]
+Predicted: {'annoyance', 'confusion'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.3333333333333333
+
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'concern'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Average Metric: 15.083333333333334 / 40  (37.7): 100%|██████████| 40/40 [00:00<00:00, 509.18it/s]
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+Best full score so far! Score: 37.71
+Score: 37.71 with parameters ['Predictor 1: Instruction 14'].
+Scores so far: [34.38, 37.29, 34.38, 37.71]
+Best score so far: 37.71
+========================
+
+
+===== Trial 4 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Average Metric: 4.416666666666666 / 15  (29.4):  35%|███▌      | 14/40 [00:00<00:00, 425.10it/s]Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'disapproval', 'disgust'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'confusion', 'surprise'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333
+
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'annoyance', 'anger', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+
+
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'disapproval', 'caring', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Average Metric: 11.833333333333334 / 36  (32.9):  88%|████████▊ | 35/40 [00:00<00:00, 530.48it/s]
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+
+Predicted: {'desire', 'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+
+Predicted: {'admiration', 'surprise'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'curiosity', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+Score: 34.58 with parameters ['Predictor 1: Instruction 8'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58]
+Best score so far: 37.71
+========================
+
+
+===== Trial 5 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief'}, Actual: {'grief', 'sadness'}, Jaccard: 0.5Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Average Metric: 13.833333333333334 / 40  (34.6): 100%|██████████| 40/40 [00:00<00:00, 579.32it/s]
+
+Predicted: {'confusion', 'disappointment'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5Predicted: {'disapproval', 'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+Average Metric: 14.916666666666668 / 40  (37.3): 100%|██████████| 40/40 [00:00<00:00, 2771.22it/s]
+Score: 37.29 with parameters ['Predictor 1: Instruction 13'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29]
+Best score so far: 37.71
+========================
+
+
+===== Trial 6 / 25 =====
+Average Metric: 1.0 / 3  (33.3):   5%|▌         | 2/40 [00:00<00:00, 148.13it/s]Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'embarrassment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Average Metric: 9.583333333333334 / 29  (33.0):  70%|███████   | 28/40 [00:00<00:00, 420.14it/s]
+
+Predicted: {'amusement', 'caring', 'curiosity'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance', 'confusion', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'disapproval', 'amusement'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring'}, Actual: {'caring'}, Jaccard: 1.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+Average Metric: 15.250000000000002 / 40  (38.1): 100%|██████████| 40/40 [00:00<00:00, 491.81it/s]
+Average Metric: 1.3333333333333333 / 4  (33.3):   8%|▊         | 3/40 [00:00<00:00, 397.43it/s]Best full score so far! Score: 38.13
+Score: 38.13 with parameters ['Predictor 1: Instruction 4'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13]
+Best score so far: 38.13
+========================
+
+
+===== Trial 7 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'nervousness'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'fear', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Average Metric: 7.833333333333333 / 20  (39.2):  48%|████▊     | 19/40 [00:00<00:00, 467.21it/s]Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+
+Predicted: {'disapproval', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5Predicted: {'embarrassment', 'disappointment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Average Metric: 14.333333333333334 / 40  (35.8): 100%|██████████| 40/40 [00:00<00:00, 554.41it/s]
+Predicted: {'annoyance', 'disapproval'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+
+
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+Score: 35.83 with parameters ['Predictor 1: Instruction 10'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83]
+Best score so far: 38.13
+========================
+
+
+===== Trial 8 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'relief', 'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'gratitude', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.3333333333333333Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5Predicted: {'annoyance', 'confusion'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'concern'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+Score: 37.71 with parameters ['Predictor 1: Instruction 14'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71]
+Best score so far: 38.13
+========================
+
+
+===== Trial 9 / 25 =====
+Average Metric: 15.083333333333334 / 40  (37.7): 100%|██████████| 40/40 [00:00<00:00, 3201.94it/s]
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'embarrassment', 'disappointment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333Predicted: {'disapproval', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+
+
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'nervousness'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'fear', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+
+
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+Score: 35.83 with parameters ['Predictor 1: Instruction 10'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83]
+Best score so far: 38.13
+========================
+
+
+===== Trial 10 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'disappointment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'disapproval', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'nervousness'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'fear', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Average Metric: 14.333333333333334 / 40  (35.8): 100%|██████████| 40/40 [00:00<00:00, 9995.96it/s]
+Average Metric: 14.333333333333336 / 40  (35.8): 100%|██████████| 40/40 [00:00<00:00, 3474.55it/s]
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'annoyance'}, Jaccard: 0.5
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+Score: 35.83 with parameters ['Predictor 1: Instruction 10'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 11 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'amusement', 'caring', 'curiosity'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance', 'confusion', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'amusement'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring'}, Actual: {'caring'}, Jaccard: 1.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+Score: 38.13 with parameters ['Predictor 1: Instruction 4'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 12 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Average Metric: 15.250000000000002 / 40  (38.1): 100%|██████████| 40/40 [00:00<00:00, 3291.33it/s]
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'amusement', 'caring', 'curiosity'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+
+
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5Predicted: {'annoyance', 'confusion', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'amusement'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring'}, Actual: {'caring'}, Jaccard: 1.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+Score: 38.12 with parameters ['Predictor 1: Instruction 4'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 13 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'fear', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Average Metric: 15.25 / 40  (38.1): 100%|██████████| 40/40 [00:00<00:00, 19633.96it/s]
+Average Metric: 15.250000000000002 / 40  (38.1): 100%|██████████| 40/40 [00:00<00:00, 3475.49it/s]
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'amusement', 'caring', 'curiosity'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance', 'confusion', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.3333333333333333Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'amusement'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring'}, Actual: {'caring'}, Jaccard: 1.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+
+Score: 38.13 with parameters ['Predictor 1: Instruction 4'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 14 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Average Metric: 3.9166666666666665 / 13  (30.1):  30%|███       | 12/40 [00:00<00:00, 340.45it/s]Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'sadness', 'disappointment', 'surprise'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'relief', 'caring'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.6666666666666666
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25Predicted: {'relief', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'confusion', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333
+
+
+
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'annoyance', 'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude', 'caring'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.3333333333333333
+Average Metric: 14.333333333333334 / 40  (35.8): 100%|██████████| 40/40 [00:00<00:00, 502.07it/s]
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'admiration'}, Actual: {'admiration'}, Jaccard: 1.0
+
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'desire', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+
+
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+Score: 35.83 with parameters ['Predictor 1: Instruction 17'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 15 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Average Metric: 2.3666666666666663 / 10  (23.7):  22%|██▎       | 9/40 [00:00<00:00, 370.46it/s]Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'relief', 'caring', 'curiosity'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'annoyance', 'disapproval', 'disgust'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'approval', 'realization', 'confusion'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.2
+
+Predicted: {'gratitude', 'admiration', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.6666666666666666Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'disappointment'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+Predicted: {'optimism', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'relief', 'optimism', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Average Metric: 8.783333333333333 / 27  (32.5):  65%|██████▌   | 26/40 [00:00<00:00, 439.31it/s]Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disapproval', 'caring', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+
+Predicted: {'desire', 'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0Predicted: {'annoyance', 'disapproval', 'amusement'}, Actual: {'disapproval'}, Jaccard: 0.3333333333333333
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+
+Predicted: {'curiosity', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+
+
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+Score: 34.04 with parameters ['Predictor 1: Instruction 9'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 16 / 25 =====
+Average Metric: 13.616666666666669 / 40  (34.0): 100%|██████████| 40/40 [00:00<00:00, 586.44it/s]
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'confusion', 'surprise'}, Actual: {'confusion'}, Jaccard: 0.5
+Average Metric: 5.249999999999999 / 23  (22.8):  55%|█████▌    | 22/40 [00:00<00:00, 481.55it/s]Predicted: {'caring', 'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'approval', 'caring', 'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333Predicted: {'gratitude', 'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.6666666666666666
+
+
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'approval', 'realization'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'curiosity'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'relief', 'neutral'}, Actual: {'neutral'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.3333333333333333
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'admiration'}, Actual: {'admiration'}, Jaccard: 1.0
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Average Metric: 11.916666666666666 / 40  (29.8): 100%|██████████| 40/40 [00:00<00:00, 565.83it/s]
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+Score: 29.79 with parameters ['Predictor 1: Instruction 18'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 17 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'disgust'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'confusion', 'surprise'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'realization', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'anger', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'joy', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+
+
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disapproval', 'caring', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'desire', 'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5
+
+Predicted: {'admiration', 'surprise'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.0
+Predicted: {'curiosity', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+
+Score: 34.58 with parameters ['Predictor 1: Instruction 5'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58]
+Best score so far: 38.13
+=========================
+
+
+===== Trial 18 / 25 =====
+Average Metric: 13.833333333333334 / 40  (34.6): 100%|██████████| 40/40 [00:00<00:00, 5713.53it/s]
+Average Metric: 1.9999999999999998 / 7  (28.6):  15%|█▌        | 6/40 [00:00<00:00, 312.36it/s]Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Average Metric: 6.25 / 17  (36.8):  40%|████      | 16/40 [00:00<00:00, 357.59it/s]Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 561.89it/s]
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 4315.35it/s]
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+Best full score so far! Score: 39.38
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 19 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+
+Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 20 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 21 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 3484.73it/s]
+Average Metric: 2.0 / 5  (40.0):  10%|█         | 4/40 [00:00<00:00, 571.43it/s]Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+
+
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 22 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 2541.08it/s]
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+
+Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+
+
+
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38, 39.38, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 23 / 25 =====
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 13326.89it/s]
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+
+
+Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+Score: 39.38 with parameters ['Predictor 1: Instruction 21'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38, 39.38, 39.38, 39.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 24 / 25 =====
+Average Metric: 15.750000000000002 / 40  (39.4): 100%|██████████| 40/40 [00:00<00:00, 3954.37it/s]
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'confusion'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.25
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'confusion', 'curiosity'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'relief', 'caring'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'admiration', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion', 'caring', 'amusement'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'approval'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.3333333333333333
+Predicted: {'optimism', 'disapproval', 'caring', 'disappointment'}, Actual: {'optimism'}, Jaccard: 0.25
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'annoyance', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.5Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'gratitude', 'joy'}, Actual: {'joy'}, Jaccard: 0.5
+
+
+Score: 34.38 with parameters ['Predictor 1: Instruction 0'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38, 39.38, 39.38, 39.38, 34.38]
+Best score so far: 39.38
+=========================
+
+
+===== Trial 25 / 25 =====
+Average Metric: 13.75 / 40  (34.4): 100%|██████████| 40/40 [00:00<00:00, 19485.73it/s]
+Average Metric: 2.4166666666666665 / 13  (18.6):  30%|███       | 12/40 [00:00<00:00, 360.15it/s]Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'confusion'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'relief', 'caring'}, Actual: {'sadness'}, Jaccard: 0.0Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'caring', 'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'approval', 'realization', 'surprise'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'annoyance', 'anger', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'confusion', 'surprise'}, Actual: {'confusion'}, Jaccard: 0.5
+Predicted: {'embarrassment', 'sadness'}, Actual: {'embarrassment'}, Jaccard: 0.5
+Predicted: {'caring', 'optimism'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+
+Predicted: {'annoyance', 'confusion'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.3333333333333333Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+
+Predicted: {'disapproval', 'caring', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.3333333333333333
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'excitement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger', 'disgust'}, Actual: {'anger'}, Jaccard: 0.25
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'annoyance'}, Actual: {'anger'}, Jaccard: 0.0Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'confusion', 'curiosity'}, Actual: {'confusion'}, Jaccard: 0.5Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5Predicted: {'pride', 'admiration'}, Actual: {'admiration'}, Jaccard: 0.5
+Average Metric: 13.166666666666666 / 40  (32.9): 100%|██████████| 40/40 [00:00<00:00, 609.00it/s]
+
+
+Predicted: {'disapproval', 'admiration', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'caring', 'optimism'}, Actual: {'caring'}, Jaccard: 0.5Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy', 'caring'}, Actual: {'joy'}, Jaccard: 0.5
+
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Score: 32.92 with parameters ['Predictor 1: Instruction 7'].
+Scores so far: [34.38, 37.29, 34.38, 37.71, 34.58, 37.29, 38.13, 35.83, 37.71, 35.83, 35.83, 38.13, 38.12, 38.13, 35.83, 34.04, 29.79, 34.58, 39.38, 39.38, 39.38, 39.38, 39.38, 39.38, 34.38, 32.92]
+Best score so far: 39.38
+=========================
+
+
+Returning best identified program with score 39.38!
+Predicted: {'sadness', 'confusion'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude', 'amusement', 'nervousness'}, Actual: {'gratitude'}, Jaccard: 0.3333333333333333
+Predicted: {'neutral'}, Actual: {'desire', 'optimism'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'admiration'}, Jaccard: 0.0
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'amusement', 'caring', 'optimism'}, Actual: {'approval', 'amusement'}, Jaccard: 0.25
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'optimism', 'caring', 'curiosity'}, Actual: {'caring'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'anger'}, Actual: {'annoyance'}, Jaccard: 0.5
+Average Metric: 7.749999999999999 / 21  (36.9):  40%|████      | 20/50 [00:00<00:00, 487.02it/s]Predicted: {'annoyance'}, Actual: {'annoyance', 'embarrassment'}, Jaccard: 0.5
+Predicted: {'gratitude'}, Actual: {'gratitude'}, Jaccard: 1.0
+Predicted: {'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0Predicted: {'caring'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'realization', 'confusion'}, Jaccard: 0.0
+Predicted: {'realization', 'sadness', 'curiosity'}, Actual: {'confusion', 'disappointment', 'neutral'}, Jaccard: 0.0
+Predicted: {'embarrassment', 'sadness', 'love'}, Actual: {'embarrassment'}, Jaccard: 0.3333333333333333
+
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0
+Predicted: {'neutral'}, Actual: {'neutral'}, Jaccard: 1.0Predicted: {'annoyance'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval'}, Actual: {'anger'}, Jaccard: 0.0
+Predicted: {'joy', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'sadness'}, Jaccard: 1.0
+
+Predicted: {'gratitude', 'joy'}, Actual: {'gratitude'}, Jaccard: 0.5
+Predicted: {'sadness', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'disapproval', 'anger'}, Actual: {'anger'}, Jaccard: 0.3333333333333333
+Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'annoyance', 'anger'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger'}, Actual: {'anger', 'curiosity'}, Jaccard: 0.3333333333333333Predicted: {'confusion'}, Actual: {'confusion'}, Jaccard: 1.0
+Predicted: {'joy'}, Actual: {'joy'}, Jaccard: 1.0
+
+Predicted: {'disapproval', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'neutral'}, Actual: {'admiration'}, Jaccard: 0.0Predicted: {'caring', 'optimism'}, Actual: {'sadness'}, Jaccard: 0.0
+Predicted: {'relief', 'sadness'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'gratitude'}, Actual: {'gratitude', 'admiration'}, Jaccard: 0.5
+Predicted: {'gratitude', 'love'}, Actual: {'gratitude', 'love'}, Jaccard: 1.0
+Predicted: {'grief', 'sadness'}, Actual: {'grief', 'neutral'}, Jaccard: 0.3333333333333333
+Predicted: {'optimism', 'caring', 'disappointment'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'surprise', 'excitement'}, Actual: {'curiosity', 'excitement'}, Jaccard: 0.3333333333333333
+Predicted: {'annoyance', 'disapproval'}, Actual: {'disapproval'}, Jaccard: 0.5
+Predicted: {'disappointment', 'optimism'}, Actual: {'optimism'}, Jaccard: 0.5
+
+Predicted: {'annoyance', 'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'amusement'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'curiosity'}, Actual: {'neutral'}, Jaccard: 0.0
+Predicted: {'annoyance', 'anger', 'disappointment'}, Actual: {'surprise'}, Jaccard: 0.0
+Predicted: {'anger', 'fear'}, Actual: {'fear'}, Jaccard: 0.5
+Predicted: {'disapproval', 'anger', 'disgust'}, Actual: {'annoyance'}, Jaccard: 0.0
+Average Metric: 17.583333333333336 / 50  (35.2): 100%|██████████| 50/50 [00:00<00:00, 823.07it/s]
+Predicted: {'anger'}, Actual: {'anger'}, Jaccard: 1.0
+                                                 text  \
+0   My favourite food is anything I didn't have to...
+1   Now if he does off himself, everyone will thin...
+2                      WHY THE FUCK IS BAYLESS ISOING
+3                         To make her feel threatened
+4                              Dirty Southern Wankers
+5   OmG pEyToN iSn'T gOoD eNoUgH tO hElP uS iN tHe...
+6   Yes I heard abt the f bombs! That has to be wh...
+7   We need more boards and to create a bit more s...
+8   Damn youtube and outrage drama is super lucrat...
+9   It might be linked to the trust factor of your...
+10  Demographics? I don’t know anybody under 35 wh...
+11  Aww... she'll probably come around eventually,...
+12  Hello everyone. Im from Toronto as well. Can c...
+13  R/sleeptrain Might be time for some sleep trai...
+14  [NAME] - same fucking problem, slightly better...
+15  Shit, I guess I accidentally bought a Pay-Per-...
+16                                   Thank you friend
+17                                    Fucking coward.
+18                that is what retardation looks like
+19  Maybe that’s what happened to the great white ...
+20  I never thought it was at the same moment, but...
+21       i got a bump and a bald spot. i feel dumb <3
+22                 You are going to do the dishes now
+23                            Slowing things down now
+24  His name has already been released. Just can't...
+25              Stupidly stubborn / stubbornly stupid
+26    Mine was apparently [NAME] and the giant peach!
+27                            I miss them being alive
+28                                      Super, thanks
+29  A new study just came out from China that it's...
+30  Troll, bro. They know they're saying stupid sh...
+31  All sounds possible except the key, I can't se...
+32             Your aunt has some damn nerve, though!
+33        Ok, then what the actual fuck is your plan?
+34     What does FPTP have to do with the referendum?
+35                          Happy to be able to help.
+36  18 is hot but very bland, it's just here this ...
+37                         Famous for his 3-4 Defense
+38  Pretty sure I’ve seen this. He swings away wit...
+39                When I feel down I listen to music.
+40                    aw, thanks! I appreciate that!
+41             Thanks! I love watching him every week
+42  I read on a different post that he died shortl...
+43  Honestly it sounds exhausting being married to...
+44  It's crazy how far Photoshop has come. Underwa...
+45  I wouldn't let a sweet potato dictate decision...
+46  It's true though. He either gets no shirt and ...
+47  It's a better option because it's my life and ...
+48               Sack, shaft, and tip. The trifecta.
+49  I know. My question was if they **used** to co...
+
+                         expected_labels  \
+0                              [neutral]
+1                              [neutral]
+2                                [anger]
+3                                 [fear]
+4                            [annoyance]
+5                             [surprise]
+6                            [gratitude]
+7                     [desire, optimism]
+8                           [admiration]
+9                              [neutral]
+10                           [confusion]
+11                 [amusement, approval]
+12                             [neutral]
+13                              [caring]
+14                           [annoyance]
+15            [annoyance, embarrassment]
+16                           [gratitude]
+17                               [anger]
+18                             [neutral]
+19              [confusion, realization]
+20  [confusion, disappointment, neutral]
+21                       [embarrassment]
+22                             [neutral]
+23                             [neutral]
+24                             [neutral]
+25                               [anger]
+26                             [neutral]
+27                      [grief, sadness]
+28                           [gratitude]
+29                             [neutral]
+30                               [anger]
+31                           [confusion]
+32                             [neutral]
+33                    [anger, curiosity]
+34                           [confusion]
+35                                 [joy]
+36                             [neutral]
+37                          [admiration]
+38                             [sadness]
+39                             [neutral]
+40               [admiration, gratitude]
+41                     [gratitude, love]
+42                      [grief, neutral]
+43                             [neutral]
+44               [curiosity, excitement]
+45                         [disapproval]
+46                            [optimism]
+47                             [neutral]
+48                             [neutral]
+49                             [neutral]
+
+                                            rationale  \
+0   The text expresses a light-hearted sentiment t...
+1   The text expresses a sense of dark humor regar...
+2   The text expresses a strong sense of frustrati...
+3   The phrase "To make her feel threatened" sugge...
+4   The phrase "Dirty Southern Wankers" expresses ...
+5   The text expresses a strong sense of frustrati...
+6   In the provided text, the speaker expresses a ...
+7   The text expresses a practical concern about n...
+8   The text expresses a sense of frustration or a...
+9   The text suggests a consideration of the "trus...
+10  The text expresses a sense of confusion regard...
+11  In the provided text, the speaker expresses a ...
+12  The text expresses a neutral sentiment. The sp...
+13  The text suggests a consideration of sleep tra...
+14  The text expresses frustration and annoyance. ...
+15  The text expresses a sense of frustration or a...
+16  The text "Thank you friend" expresses gratitud...
+17  The text "Fucking coward." expresses a strong ...
+18  The phrase "that is what retardation looks lik...
+19  The text expresses a sense of curiosity about ...
+20  In the provided text, the speaker reflects on ...
+21  The text expresses feelings of self-consciousn...
+22  The text "You are going to do the dishes now" ...
+23  The phrase "Slowing things down now" suggests ...
+24  The text expresses a sense of restriction or l...
+25  The text "Stupidly stubborn / stubbornly stupi...
+26  The text "Mine was apparently [NAME] and the g...
+27  The text expresses a sense of longing and sorr...
+28  The text "Super, thanks" expresses a positive ...
+29  The text expresses a sense of urgency and a ne...
+30  The text expresses strong negative feelings to...
+31  The text expresses a sense of confusion regard...
+32  The phrase "Your aunt has some damn nerve, tho...
+33  The text expresses a strong sense of confusion...
+34  The text expresses confusion regarding the rel...
+35  The text "Happy to be able to help" expresses ...
+36  The text expresses a sense of disappointment a...
+37  The text "Famous for his 3-4 Defense" does not...
+38  In the provided text, the speaker expresses a ...
+39  The text expresses a coping mechanism for feel...
+40  The text expresses gratitude through the phras...
+41  The text expresses a positive sentiment toward...
+42  The text expresses a sense of sadness and grie...
+43  The text expresses a sense of concern and empa...
+44  The text expresses a sense of amazement and su...
+45  The text expresses a sense of disapproval or a...
+46  In the provided text, the speaker expresses a ...
+47  The text expresses a strong sense of defiance ...
+48  The text "Sack, shaft, and tip. The trifecta."...
+49  The text expresses a sense of curiosity as the...
+
+                     extracted_emotions emotion_classification_metric
+0                      [amusement, joy]                 <class 'str'>
+1                  [confusion, sadness]                 <class 'str'>
+2                               [anger]                      ✔️ [1.0]
+3                         [fear, anger]                      ✔️ [0.5]
+4         [anger, disapproval, disgust]                 <class 'str'>
+5    [anger, annoyance, disappointment]                 <class 'str'>
+6   [amusement, nervousness, gratitude]       ✔️ [0.3333333333333333]
+7                             [neutral]                 <class 'str'>
+8                    [anger, annoyance]                 <class 'str'>
+9                              [caring]                 <class 'str'>
+10                          [confusion]                      ✔️ [1.0]
+11        [caring, optimism, amusement]                     ✔️ [0.25]
+12                            [neutral]                      ✔️ [1.0]
+13        [curiosity, caring, optimism]       ✔️ [0.3333333333333333]
+14                   [anger, annoyance]                      ✔️ [0.5]
+15                          [annoyance]                      ✔️ [0.5]
+16                          [gratitude]                      ✔️ [1.0]
+17                 [anger, disapproval]                      ✔️ [0.5]
+18                 [disapproval, anger]                 <class 'str'>
+19                          [curiosity]                 <class 'str'>
+20    [curiosity, realization, sadness]                 <class 'str'>
+21       [embarrassment, sadness, love]       ✔️ [0.3333333333333333]
+22                            [neutral]                      ✔️ [1.0]
+23                            [neutral]                      ✔️ [1.0]
+24                          [annoyance]                 <class 'str'>
+25             [annoyance, disapproval]                 <class 'str'>
+26                     [joy, amusement]                 <class 'str'>
+27                     [grief, sadness]                      ✔️ [1.0]
+28                     [gratitude, joy]                      ✔️ [0.5]
+29            [disappointment, sadness]                 <class 'str'>
+30      [anger, annoyance, disapproval]       ✔️ [0.3333333333333333]
+31                          [confusion]                      ✔️ [1.0]
+32                   [anger, annoyance]                 <class 'str'>
+33                   [anger, annoyance]       ✔️ [0.3333333333333333]
+34                          [confusion]                      ✔️ [1.0]
+35                                [joy]                      ✔️ [1.0]
+36        [disappointment, disapproval]                 <class 'str'>
+37                            [neutral]                 <class 'str'>
+38                   [caring, optimism]                 <class 'str'>
+39                    [sadness, relief]                 <class 'str'>
+40                          [gratitude]                      ✔️ [0.5]
+41                    [love, gratitude]                      ✔️ [1.0]
+42                     [grief, sadness]       ✔️ [0.3333333333333333]
+43   [caring, disappointment, optimism]                 <class 'str'>
+44               [surprise, excitement]       ✔️ [0.3333333333333333]
+45             [disapproval, annoyance]                      ✔️ [0.5]
+46           [disappointment, optimism]                      ✔️ [0.5]
+47               [annoyance, amusement]                 <class 'str'>
+48                          [amusement]                 <class 'str'>
+49                          [curiosity]                 <class 'str'>
+
+进程已结束，退出代码为 0
