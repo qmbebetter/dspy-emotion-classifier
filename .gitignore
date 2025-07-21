@@ -1,0 +1,27 @@
+# Environment variables
+.env
+
+# Python virtual environment
+/venv/
+/new_env/
+/env/
+__pycache__/
+*.pyc
+
+# IDE files (PyCharm)
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Datasets & Caches (非常重要，避免上传大数据)
+*.csv
+*.json
+*.db
+*.sqlite3
+/data/
+/datasets/
+/cache/
+temp_dir/

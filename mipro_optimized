@@ -1,0 +1,65 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Daryl is loading crates at a warehouse and wants to make sure that they are not overloaded. Each crate can weigh up to 20kg and he has 15 crates he can fill. He has 4 bags of nails to load, each of which weighs 5kg; he has 12 bags of hammers, each of which weighs 5 kg; he also has 10 bags of wooden planks, each of which weighs 30kg and can be sub-divided. He realizes that he has too much to load and will have to leave some items out of the crates to meet the weight limit. In kg, how much is Daryl going to have to leave out of the crates?",
+        "rationale": "produce the answer. We first calculate the total weight of the nails, hammers, and wooden planks. The total weight of the nails is 5kg x 4 bags = 20kg. The total weight of the hammers is 5kg x 12 bags = 60kg. The total weight of the wooden planks is 30kg x 10 bags = 300kg. Adding these together, the total weight of all the items is 20kg + 60kg + 300kg = 380kg. Since each crate can only weigh up to 20kg, Daryl will have to leave out 380kg - (20kg x 15 crates) = 80kg out of the crates.",
+        "answer": "80"
+      },
+      {
+        "augmented": true,
+        "question": "James splits 4 packs of stickers that have 30 stickers each.  Each sticker cost $.10.  If his friend pays for half how much did James pay?",
+        "rationale": "produce the answer. We know that James has 4 packs of stickers with 30 stickers each, so he has a total of 4 * 30 = 120 stickers. Each sticker costs $.10, so the total cost of all the stickers is 120 * $.10 = $12. His friend pays for half, so James pays for the other half, which is $12 \/ 2 = $6.",
+        "answer": "$6"
+      },
+      {
+        "question": "The result from the 40-item Statistics exam Marion and Ella took already came out. Ella got 4 incorrect answers while Marion got 6 more than half the score of Ella. What is Marion's score?",
+        "gold_reasoning": "Ella's score is 40 items - 4 items = <<40-4=36>>36 items. Half of Ella's score is 36 items \/ 2 = <<36\/2=18>>18 items. So, Marion's score is 18 items + 6 items = <<18+6=24>>24 items.",
+        "answer": "24"
+      },
+      {
+        "question": "Sandy's monthly phone bill expense is equal to ten times her age now. In two years, Sandy will be three times as old as Kim. If Kim is currently 10 years old, calculate Sandy's monthly phone bill expense.",
+        "gold_reasoning": "If Kim is currently 10 years old, she will be 10+2 =<<10+2=12>>12 years old in two years. In two years, Sandy will be three times as old as Kim, meaning Sandy will be 3*12 = <<3*12=36>>36 years old. Currently, Sandy is 36-2 = <<36-2=34>>34 years old. If Sandy's monthly phone bill expense is equal to ten times her age now, she pays 10*34 =$<<10*34=340>>340 in phone bill expense",
+        "answer": "340"
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${produce the answer}. We ..."
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "As a math problem solver, determine the answer to the following question:",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${produce the answer}. We ..."
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}
