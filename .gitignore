@@ -25,3 +25,6 @@ build/
 /datasets/
 /cache/
 temp_dir/
+
+# DSPy or other library caches
+bbh_nshapes_cache/
